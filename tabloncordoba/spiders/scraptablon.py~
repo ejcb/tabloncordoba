@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+import scrapy
+
+
+class ScraptablonSpider(scrapy.Spider):
+    name = 'scraptablon'
+    allowed_domains = ['http://mezquita.ayuncordoba.es/atencionciudadana/oactablon.nsf']
+    start_urls = ['http://http://mezquita.ayuncordoba.es/atencionciudadana/oactablon.nsf/']
+
+    def parse(self, response):
+        pass
